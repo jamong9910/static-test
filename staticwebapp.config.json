@@ -1,7 +1,0 @@
-{
-  "navigationFallback": {
-    "rewrite": "/",
-    "exclude": ["/images/*", "/css/*", "/js/*", "/favicon.ico"]
-  }
-}
-
