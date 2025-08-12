@@ -1,12 +1,11 @@
 {
-  "navigationFallback": {
-    "rewrite": "/index.html",
-    "exclude": [
-      "/images/*",
-      "/css/*",
-      "/js/*",
-      "/favicon.ico"
-    ]
+  "navigationFallback": { "rewrite": "/index.html" },
+  "globalHeaders": {
+    "/index.html": { "Cache-Control": "no-store, must-revalidate" },
+    "/js/*":       { "Cache-Control": "public, max-age=31536000, immutable" },
+    "/css/*":      { "Cache-Control": "public, max-age=31536000, immutable" },
+    "/assets/*":   { "Cache-Control": "public, max-age=31536000, immutable" },
+    "/images/*":   { "Cache-Control": "public, max-age=31536000, immutable" }
   }
 }
 
